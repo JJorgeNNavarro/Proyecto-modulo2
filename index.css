@@ -34,10 +34,75 @@
     }
 }
 
-/*-----MAIN-----*/
-main {
-    padding-bottom: 2%;
-    background-color: #131315;
+/*-----------------------------------MAIN---------------------------------*/
+.containerPrincipal{
     min-height: 80vh;
 }
+body{
+    background-color: #29425e;
+}
 
+/*FOOTER*/
+footer{
+    padding: 0.5rem 0;
+    background-color: #040428;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    margin-bottom: 0;
+    max-height: 10vh;
+}
+
+.class-redes img{
+    max-width: 35px;
+    height: 100%;
+}
+
+.class-acerca a{
+    color: #D9D9D9;
+    list-style: none;
+    text-decoration: none;
+}
+
+.class-contactanos a{
+    color: #D9D9D9;
+    list-style: none;
+    text-decoration: none;
+}
+
+.class-logo img{
+     width: 20%;
+   
+ }
+
+.class-redes{
+    margin: 5px 0;
+}
+
+@media screen and (min-width:600px){
+    footer{
+        height: 100px;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
+    .class-logo img {
+        width: 23%;
+        object-fit: cover;
+    }
+
+    .class-redes img{
+        width: 30%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .class-contactanos{
+        margin-top: 0px;
+    }
+
+    .class-acerca{
+        margin-top: 0px;
+    }
+}
