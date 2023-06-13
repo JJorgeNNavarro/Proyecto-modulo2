@@ -16,6 +16,8 @@
    
 }
 .nombreNav{
+    margin-left: 1rem;
+    margin-right: 1rem;
     font-size: 1.5rem;
     font-weight: bold;
 }
@@ -24,8 +26,18 @@
     background-color: #b236f4;
     font-weight: bold;
 }
+
+@media screen and (max-width:750px){
+    .nombreNav{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
 /*-----MAIN-----*/
 main {
     padding-bottom: 2%;
     background-color: #131315;
+    min-height: 80vh;
 }
+
