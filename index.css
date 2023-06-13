@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*-----------------NAV-------------------*/
+.navbar-2 {
+    background-color: #040428;
+    font-weight: 450;
+    font-size: 1.1rem;
+}
+
+.letrasnav{
+    font-size: 1.2rem;
+   
+}
+.nombreNav{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.colorBoton{
+    background-color: #b236f4;
+    font-weight: bold;
+}
+/*-----MAIN-----*/
+main {
+    padding-bottom: 2%;
+    background-color: #131315;
+}
