@@ -50,7 +50,7 @@ footer{
     display: grid;
     grid-template-columns: 1fr;
     margin-bottom: 0;
-    max-height: 10vh;
+    max-height: 20vh;
 }
 
 .class-redes img{
