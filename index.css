@@ -73,7 +73,7 @@ body{
     text-align: left;
     padding: 20px;
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   .containerPrincipal .overlay button {
     background-color: #b236f4;
@@ -173,7 +173,7 @@ footer{
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    max-height: 20vh;
+    max-height: 10vh;
 }
 
 .class-redes img{
