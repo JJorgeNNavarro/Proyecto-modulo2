@@ -102,14 +102,15 @@ body{
       align-items: flex-start
     }
     
-    .containerPrincipal .overlay {
-    position: absolute;
-    width: 100%;
-    align-items: flex-start;
-    flex-direction: column;
-    max-height: 48%;
-    display: flex;
-    }
+   /* .containerPrincipal .overlay {
+        position: absolute;
+        width: 100%;
+        align-items: flex-start;
+        flex-direction: column;
+        max-height: 48%;
+        display: flex;
+        }*/
+
     .containerPrincipal h2,
     .containerPrincipal p {
       margin: 10px 0;
@@ -119,7 +120,7 @@ body{
      
      
 /*----------------MEDIA QUERY CELULAR-----------------------------*/
-@media (max-width: 400px){
+@media (max-width: 600px){
     .containerPrincipal .overlay button {
         background-color: #b236f4;
         color: white;
@@ -145,14 +146,15 @@ body{
     text-overflow: ellipsis;
     font-size: 2vw;
   }
-  .containerPrincipal .overlay {
+ /* .containerPrincipal .overlay {
     position: absolute;
     width: 100%;
     align-items: flex-start;
     flex-direction: column;
     max-height: 30%;
     display: flex;
-    }
+    }*/
+    
 .containerPrincipal{
     margin: 0;
 }
