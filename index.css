@@ -37,10 +37,12 @@
 /*-----------------------------------MAIN---------------------------------*/
 .containerPrincipal{
     min-height: 80vh;
+    
 }
 body{
     background-color: #29425e;
 }
+
 
 /*--------------Container con imagen o video---------------*/
 .containerPrincipal {
