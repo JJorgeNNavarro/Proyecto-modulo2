@@ -164,12 +164,15 @@ body{
 
 /*-----------------------------------------FOOTER------------------------------------------*/
 footer{
-    padding: 0.5rem 0;
+    position: fixed;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     background-color: #040428;
     text-align: center;
     display: grid;
     grid-template-columns: 1fr;
-    margin-bottom: 0;
     max-height: 20vh;
 }
 
