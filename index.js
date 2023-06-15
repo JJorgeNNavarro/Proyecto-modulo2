@@ -47,8 +47,8 @@ function render(arrayPeliculas) {
 }
 function crearCategoriaDiv(categoria, peliculas) {
   //viene de la linea 44 como parametro
-  return `<div id="${categoria}" class="row justify-content-center ps-1 pe-1 m-0">
-  <div class="tituloCartelera justify-content-center m-0 p-0 container-fluid d-flex flex-wrap">
+  return `<div id="${categoria}" class="row justify-content-center ps-1 pe-1 m-0 ">
+  <div class="tituloCartelera justify-content-center m-0 p-0 container-fluid d-flex flex-wrap separador">
     <h3 class="text-center">${categoria}</h3>
 
     </div> ${peliculas} </div>`;
