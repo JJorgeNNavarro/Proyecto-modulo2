@@ -9,9 +9,6 @@
     background-color: #040428;
     font-weight: 450;
     font-size: 1.1rem;
-    position: fixed;
-    z-index: 2000;
-    width: 100%;
 }
 
 .letrasnav{
@@ -187,6 +184,8 @@ footer{
     background-color: #040428;
     text-align: center;
     display: grid;
+    grid-template-columns: 1fr;
+    max-height: 10vh;
 }
 
 .class-redes img{
