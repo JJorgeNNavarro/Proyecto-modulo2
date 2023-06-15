@@ -11,27 +11,46 @@ window.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", ponerAlturaOverlay);
 });
 
-let productos = JSON.parse(localStorage.getItem("aventura"));
+let pelis = JSON.parse(localStorage.getItem("peliculas"));
 
-if (productos === null) {
-  productos = aventura;
-  localStorage.setItem("carritox", JSON.stringify(productos));
+if (pelis === null || pelis !== JSON.stringify(peliculas)) {
+  localStorage.setItem("peliculas", JSON.stringify(peliculas));
 }
+/*---------------Agregar peliculas y categorias---------------------------------------*/
+function crearTarjeta(arrayPeliculas) {
+  let arrayPelis = ``;
 
-function crearTarjeta(arrayProductos, seccion) {
-  arrayProductos.forEach((producto) => {
+  arrayPeliculas.forEach((peli) => {
     let item = `
     <div class="col-3 p-2 new-sand bg-white my-2 justify-content-center d-flex flex-column bg-transparent">
-      <img src="${producto.imagen}" class="img-fluid tarjetaImagen" alt="Imagen del ${producto.nombre}">
+      <img src="${peli.imagen}" class="img-fluid tarjetaImagen" alt="Imagen del ${peli.nombre}">
     </div>
-    `;
-    seccion.innerHTML += item;
+    `; //creando la tarjeta de la pelicula
+    arrayPelis += item; //al string vacio le sumo las tarjetas
+  });
+  return arrayPelis; //devuelvo el string con todos los div de las peliculas de array peliculas
+}
+
+function render(arrayPeliculas) {
+  let lugarhtml = document.getElementById("peliculas");
+
+  let categoriaSet = new Set(); //no permite duplicados y no tiene orden
+  arrayPeliculas.forEach((peli) => categoriaSet.add(peli.categoria)); //guardo la categoria de las peliculas
+
+  categoriaSet.forEach((categoria) => {
+    let peliculasDivs = crearTarjeta(
+      arrayPeliculas.filter((peli) => peli.categoria == categoria)
+    );
+    let categoriaHtml = crearCategoriaDiv(categoria, peliculasDivs);
+    lugarhtml.innerHTML += categoriaHtml; //agrego al div de  peliculas , las demas categorias
   });
 }
+function crearCategoriaDiv(categoria, peliculas) {
+  //viene de la linea 44 como parametro
+  return `<div id="${categoria}" class="row justify-content-center ps-1 pe-1 m-0">
+  <div class="tituloCartelera justify-content-center m-0 p-0 container-fluid d-flex flex-wrap">
+    <h3 class="text-center">${categoria}</h3>
 
-function renderAventura() {
-  let lugarhtml = document.getElementById("aventura");
-  crearTarjeta(aventura, lugarhtml);
+    </div> ${peliculas} </div>`;
 }
-
-renderAventura();
+render(pelis);
