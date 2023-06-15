@@ -21,8 +21,9 @@ function crearTarjeta(arrayPeliculas) {
   let arrayPelis = ``;
 
   arrayPeliculas.forEach((peli) => {
+    //agregada col-lg-3 col-md-3 col-6 para compatibilidad movil
     let item = `
-    <div class="col-3 p-2 new-sand bg-white my-2 justify-content-center d-flex flex-column bg-transparent">
+    <div class="col-lg-3 col-md-3 col-6 p-2 new-sand bg-white my-2 justify-content-center d-flex flex-column bg-transparent">
       <img src="${peli.imagen}" class="img-fluid tarjetaImagen" alt="Imagen del ${peli.nombre}">
     </div>
     `; //creando la tarjeta de la pelicula

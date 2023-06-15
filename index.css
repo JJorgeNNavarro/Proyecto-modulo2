@@ -231,7 +231,7 @@ footer{
     }
 
     .class-logo img {
-        width: 23%;
+        width: 30%;
         object-fit: cover;
     }
 
@@ -249,3 +249,5 @@ footer{
         margin-top: 0px;
     }
 }
+
+   
