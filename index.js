@@ -22,7 +22,7 @@ function crearTarjeta(arrayProductos, seccion) {
   arrayProductos.forEach((producto) => {
     let item = `
     <div class="col-3 p-2 new-sand bg-white my-2 justify-content-center d-flex flex-column bg-transparent">
-      <img src="${producto.imagen}" class="img-fluid" alt="Imagen del ${producto.nombre}">
+      <img src="${producto.imagen}" class="img-fluid tarjetaImagen" alt="Imagen del ${producto.nombre}">
     </div>
     `;
     seccion.innerHTML += item;

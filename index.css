@@ -43,7 +43,10 @@ body{
     font-weight: bold;
     color: #b236f4;
 }
-
+h3{
+    font-size: 2 rem;
+    font-weight: bold;
+}
 /*--------------Container con imagen o video---------------*/
 .containerPrincipal {
     position: relative;
@@ -96,6 +99,13 @@ body{
     margin: 10px 0;
     width: 50%;
   }
+
+  /*---------------------CARTELERA---------------------*/
+    .tarjeta-imagen {
+        max-width: 100%;
+        height: auto;
+      }
+  
   /*-----MEDIAQUERY TABLET-----------------*/
   @media (max-width: 820px) {
     .containerPrincipal {
@@ -170,7 +180,7 @@ footer{
     padding: 0;
     left: 0;
     bottom: 0;
-    width: 100%;
+    width: 100vh;
     background-color: #040428;
     text-align: center;
     display: grid;
