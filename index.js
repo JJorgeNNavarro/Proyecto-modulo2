@@ -31,7 +31,6 @@ function crearTarjeta(arrayProductos, seccion) {
 
 function renderAventura() {
   let lugarhtml = document.getElementById("aventura");
-
   crearTarjeta(aventura, lugarhtml);
 }
 

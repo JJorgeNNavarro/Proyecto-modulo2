@@ -176,7 +176,7 @@ h3{
 
 /*-----------------------------------------FOOTER------------------------------------------*/
 footer{
-    position: fixed;
+    position: relative;
     padding: 0;
     left: 0;
     bottom: 0;
