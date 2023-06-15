@@ -35,14 +35,14 @@
 }
 
 /*-----------------------------------MAIN---------------------------------*/
-.containerPrincipal{
-    min-height: 80vh;
-    
-}
 body{
     background-color: #29425e;
 }
-
+.tituloCartelera{
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #b236f4;
+}
 
 /*--------------Container con imagen o video---------------*/
 .containerPrincipal {
