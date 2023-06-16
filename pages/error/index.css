@@ -1,0 +1,162 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*-----------------NAV-------------------*/
+.navbar-2 {
+    background-color: #040428;
+    font-weight: 450;
+    font-size: 1.1rem;
+    position: fixed;
+    z-index: 4000;
+    width: 100%;
+}
+
+.letrasnav{
+    font-size: 1.2rem;
+   
+}
+.nombreNav{
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.colorBoton{
+    background-color: #b236f4;
+    font-weight: bold;
+}
+
+@media screen and (max-width:750px){
+    .nombreNav{
+        font-size: 1.2rem;
+        font-weight: bold;
+    }
+}
+
+/*-----------------------------------------FOOTER------------------------------------------*/
+footer{
+    position: fixed;
+    padding: 0;
+    left: 0;
+    bottom: 0;
+    width: 100vh;
+    background-color: #040428;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    max-height: 10vh;
+}
+
+.class-redes img{
+    max-width: 35px;
+    height: 100%;
+}
+
+.class-acerca a{
+    color: #D9D9D9;
+    list-style: none;
+    text-decoration: none;
+}
+
+.class-contactanos a{
+    color: #D9D9D9;
+    list-style: none;
+    text-decoration: none;
+}
+
+.class-logo img{
+     width: 20%;
+   
+ }
+
+.class-redes{
+    margin: 5px 0;
+}
+
+@media screen and (min-width:600px){
+    footer{
+        height: 100px;
+        grid-template-rows: 1fr;
+        grid-template-columns: repeat(4, 1fr);
+        align-items: center;
+    }
+
+    .class-logo img {
+        width: 30%;
+        object-fit: cover;
+    }
+
+    .class-redes img{
+        width: 30%;
+        height: 100%;
+        object-fit: cover;
+    }
+
+    .class-contactanos{
+        margin-top: 0px;
+    }
+
+    .class-acerca{
+        margin-top: 0px;
+    }
+}
+
+/*---------------------------main-------------------------------*/
+.containerPrincipal{
+    flex-direction: column;
+    text-align: center;
+    min-height: 90vh;
+    height: auto;
+    width: 100%;
+    background-image: url(/images/error.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+h1, h2{
+    color: #b236f4;
+}
+.regresar-container {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  body{
+    background-color: #29425e;
+}
+
+
+.imagenfondo{
+    background-image: url("/images/error2.png");
+}
+
+@media (max-width: 600px){
+    .imagenFondo{
+        width: 50%;
+        height: auto;
+        background-image: url("/images/error.png");
+        background-repeat: no-repeat;
+    }
+}
+
+/*-------------------boton------------------*/
+  .containerPrincipal .regresar-container button {
+    background-color: #b236f4;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+/* QUITAR EL HEIGHT:VH PARA QUE FUNCIONE EL FOOTER LUEGO DE PONER COSAS DENTRO DEL MAIN
