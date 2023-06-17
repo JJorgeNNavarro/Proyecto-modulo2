@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const overlay = document.getElementById("videoOverlay");
 
   function ponerAlturaOverlay() {
-    overlay.style.height = video.offsetHeight + "px";
+    overlay.style.height = video.offsetHeight + 30 + "px";
   }
 
   ponerAlturaOverlay();
