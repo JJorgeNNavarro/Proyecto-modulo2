@@ -55,3 +55,5 @@ function crearCategoriaDiv(categoria, peliculas) {
     </div> ${peliculas} </div>`;
 }
 render(pelis);
+
+/*----------FUNCIONES DEL LOGIN-------------*/
