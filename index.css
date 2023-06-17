@@ -65,6 +65,7 @@ h3{
     height: auto;
     object-fit: cover;
     object-position: 100% 0;
+    z-index: -5;
   }
   
   /* ------- estilos texto arriba imagen----*/
@@ -91,16 +92,22 @@ h3{
     border-radius: 4px;
     margin-top: 10px;
     cursor: pointer;
-    width: 10%;
+
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
   
   .containerPrincipal h2,
   .containerPrincipal p {
     margin: 10px 0;
     width: 50%;
+  }
+  .botonPlayConLink {
+    display: inline-block;
+    z-index: 500;
   }
 
   /*---------------------CARTELERA---------------------*/
