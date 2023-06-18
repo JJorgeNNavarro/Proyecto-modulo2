@@ -11,11 +11,7 @@ window.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", ponerAlturaOverlay);
 });
 
-let pelis = JSON.parse(localStorage.getItem("peliculas"));
-
-if (pelis === null || pelis !== JSON.stringify(peliculas)) {
-  localStorage.setItem("peliculas", JSON.stringify(peliculas));
-}
+let pelis = obtenerPeliculas();
 /*---------------Agregar peliculas y categorias---------------------------------------*/
 function crearTarjeta(arrayPeliculas) {
   let arrayPelis = ``;
@@ -24,7 +20,7 @@ function crearTarjeta(arrayPeliculas) {
     //agregada col-lg-3 col-md-3 col-6 para compatibilidad movil
     let item = `
     <div class="col-lg-3 col-md-3 col-6 p-2 new-sand bg-white my-2 justify-content-center d-flex flex-column bg-transparent">
-      <img src="${peli.imagen}" class="img-fluid tarjetaImagen" alt="Imagen del ${peli.nombre}">
+    <a href="/pages/detalles/index.html?id=${peli.codigo}"><img src="${peli.imagen}" class="img-fluid tarjetaImagen" alt="Imagen del ${peli.nombre}"></a> 
     </div>
     `; //creando la tarjeta de la pelicula
     arrayPelis += item; //al string vacio le sumo las tarjetas
