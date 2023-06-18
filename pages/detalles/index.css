@@ -42,7 +42,7 @@ body{
     background-color: #29425e;
 }
 
-/*FOOTER*/
+/*-------------------------------FOOTER--------------------------------*/
 footer{
     padding: 0.5rem 0;
     background-color: #040428;
@@ -51,6 +51,8 @@ footer{
     grid-template-columns: 1fr;
     margin-bottom: 0;
     max-height: 20vh;
+    position: fixed;
+    bottom: 0;
 }
 
 .class-redes img{
