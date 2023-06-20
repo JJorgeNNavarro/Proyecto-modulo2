@@ -5,9 +5,9 @@ let peliculas = [
     categoria: "Aventura",
     codigo: 0,
     descripcion:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim dui. Duis nec eros rhoncus, luctus mauris non, lobortis velit. Proin sed ligula euismod, tempor tellus at, dictum lorem. Donec dignissim nec felis at cursus. Cras eget sem vitae odio varius viverra. Vivamus scelerisque quis augue id consequat. Mauris egestas gravida eros vitae faucibus. Vivamus magna leo, tincidunt vel hendrerit sit amet, molestie ac nisl.",
+      "Cuando los Guardianes de la Galaxia quedan atrapados en un agujero de gusano, un Groot más pequeño de lo normal se separa a miles de millones de años luz del equipo. Al caer a un planeta inferior, Groot descubre que se encuentra en un mundo totalmente ajeno y desconocido, lleno de criaturas y sociedades extrañas.",
     publicado: true,
-    destacada: false,
+    destacada: true,
     video: "/videos/groot.mp4",
   },
   {
@@ -16,9 +16,9 @@ let peliculas = [
     categoria: "Aventura",
     codigo: 1,
     descripcion:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim dui. Duis nec eros rhoncus, luctus mauris non, lobortis velit. Proin sed ligula euismod, tempor tellus at, dictum lorem. Donec dignissim nec felis at cursus. Cras eget sem vitae odio varius viverra. Vivamus scelerisque quis augue id consequat. Mauris egestas gravida eros vitae faucibus. Vivamus magna leo, tincidunt vel hendrerit sit amet, molestie ac nisl.",
+      "Zootrópolis es una moderna metrópoli donde viven todo tipo de mamíferos. Cerca de la ciudad vive Judy Hopps, una conejita que no se parece en nada a sus 275 hermanos ni a sus padres, los encantadores conejos Bonnie y Stu. Desde niña, Judy ha deseado ayudar a los demás y ahora cree haberlo logrado al ser la primera conejita oficial de la policía de Zootrópolis. Sin embargo, pronto descubre que trabajar en un cuerpo compuesto de animales duros y enormes no es fácil",
     publicado: true,
-    destacada: true,
+    destacada: false,
     video: "/videos/zootopia.mp4",
   },
   {

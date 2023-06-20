@@ -52,5 +52,7 @@ h1, h2{
     align-items: center;
   }
 
-  
+  footer{
+    bottom: 0;
+  }
 /* QUITAR EL HEIGHT:VH PARA QUE FUNCIONE EL FOOTER LUEGO DE PONER COSAS DENTRO DEL MAIN
