@@ -1,0 +1,31 @@
+.containerPrincipal{
+    min-height: 80vh;
+}
+body{
+    background-color: #29425e;
+}
+/* Estilos para el formulario de registro */
+.registrar-container {
+    background-color: rgba(4, 4, 40, 0.7); /* Color semitransparente #040428 */
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto; /* Centrado horizontal */
+  }
+  
+  .registrar-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .registrar-container .form-group {
+    margin-bottom: 20px;
+  }
+
+  .form-group label{
+    color: white;
+  }
+  h2{
+    color: #b236f4;
+    font-weight: bold;
+
+  }

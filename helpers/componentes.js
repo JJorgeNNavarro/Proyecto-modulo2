@@ -18,7 +18,7 @@ function crearHeader(seccionActiva) {
                         }" href="/">  Inicio<span class="sr-only">(current)</span></a> 
                     </li> 
                     <li class="nav-item "> 
-                        <a class="nav-link letrasnav ${
+                        <a class=" nav-link letrasnav ${
                           seccionActiva == "login" ? "active" : ""
                         }" href="/pages/Login">Login</a> 
                     </li> 
