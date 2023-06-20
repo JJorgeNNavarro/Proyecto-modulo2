@@ -7,11 +7,21 @@ function obtenerPelicula() {
     obtenerPeliculas()
       .filter((peli) => peli.codigo == peliculaID)
       .map((peli) => {
-        let html = "<div>";
-        html += '<img src="' + peli.imagen + '" alt="' + peli.nombre + '">';
-        html += "<h2>" + peli.nombre + "</h2>";
-        html += "<p>" + peli.descripcion + "</p>";
-        html += "</div>";
+        let html = `
+        <div class="card text-white bg-dark-v1 border-dark mt-5">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="${peli.imagen}" class="img-fluid rounded-start" alt="">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h1 class="card-title">${peli.nombre}</h1>
+                <p class="card-text">${peli.descripcion}</p>
+                <button class="btn text-white colorBoton">Reproducir</button>
+              </div>
+            </div>
+          </div>
+        </div>`;
 
         document.getElementById("peliculas-container").innerHTML += html;
       });

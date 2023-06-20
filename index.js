@@ -57,7 +57,7 @@ function crearDestacada() {
 }
 
 function render() {
-  crearHeader("home");
+  crearHeader("inicio");
   crearFooter();
   crearListaPeliculas();
   crearDestacada();
