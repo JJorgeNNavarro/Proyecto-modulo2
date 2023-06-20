@@ -17,7 +17,7 @@ function obtenerPelicula() {
               <div class="card-body">
                 <h1 class="card-title">${peli.nombre}</h1>
                 <p class="card-text">${peli.descripcion}</p>
-                <button class="btn text-white colorBoton">Reproducir</button>
+                <a href="/pages/error/"><button class="btn text-white colorBoton">Reproducir</button></a>
               </div>
             </div>
           </div>

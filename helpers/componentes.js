@@ -1,14 +1,12 @@
 /*
  * Este metodo genera el header y lo agrega en el div <header> con id = header
- * Esto se hace asi para no tener que copiar y pegar el mismo componente en las diferentes vistas,
- * por eso todos los paths salen del root.
  */
 function crearHeader(seccionActiva) {
   let header = ` 
     <nav class="navbar navbar-2 navbar-expand-lg navbar-dark"> 
         <div class="container-fluid"> 
-            <a href="#"><img src="/images/logo4.png" alt="" width="60"  class="d-inline-block align-text-center logo"></a> 
-            <a class="navbar-brand text-white nombreNav align-text-left" href="#">Rolling Stream</a> 
+            <a href="/index.html"><img src="/images/logo4.png" alt="logo rolling stream" width="60"  class="d-inline-block align-text-center logo"></a> 
+            <a class="navbar-brand text-white nombreNav align-text-left" href="/index.html">Rolling Stream</a> 
             <button class="navbar-toggler text-white bg-light " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation "> 
                 <span class="navbar-toggler-icon"></span> 
             </button> 
@@ -43,7 +41,7 @@ function crearHeader(seccionActiva) {
 
 /*
  * Este metodo genera el footer y lo agrega en el div <footer> con id = footer
- * Esto se hace asi para no tener que copiar y pegar el mismo componente en las diferentes vistas,
+ * Esto  para no tener que copiar y pegar el mismo componente en las diferentes vistas,
  * por eso todos los paths salen del root.
  */
 function crearFooter() {
