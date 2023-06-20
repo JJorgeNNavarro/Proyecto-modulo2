@@ -39,46 +39,7 @@ let peliculas = [
     publicado: true,
     destacada: false,
   },
-  {
-    nombre: "Winnie Poh",
-    imagen: "/images/winnie_pooh.jpg",
-    categoria: "Aventura",
-    codigo: 3,
-    descripcion:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim dui. Duis nec eros rhoncus, luctus mauris non, lobortis velit. Proin sed ligula euismod, tempor tellus at, dictum lorem. Donec dignissim nec felis at cursus. Cras eget sem vitae odio varius viverra. Vivamus scelerisque quis augue id consequat. Mauris egestas gravida eros vitae faucibus. Vivamus magna leo, tincidunt vel hendrerit sit amet, molestie ac nisl.",
-    publicado: true,
-    destacada: false,
-  },
-  {
-    nombre: "Winnie Poh",
-    imagen: "/images/winnie_pooh.jpg",
-    categoria: "Aventura",
-    codigo: 3,
-    descripcion:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim dui. Duis nec eros rhoncus, luctus mauris non, lobortis velit. Proin sed ligula euismod, tempor tellus at, dictum lorem. Donec dignissim nec felis at cursus. Cras eget sem vitae odio varius viverra. Vivamus scelerisque quis augue id consequat. Mauris egestas gravida eros vitae faucibus. Vivamus magna leo, tincidunt vel hendrerit sit amet, molestie ac nisl.",
-    publicado: true,
-    destacada: false,
-  },
-  {
-    nombre: "Winnie Poh",
-    imagen: "/images/winnie_pooh.jpg",
-    categoria: "Aventura",
-    codigo: 3,
-    descripcion:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim dui. Duis nec eros rhoncus, luctus mauris non, lobortis velit. Proin sed ligula euismod, tempor tellus at, dictum lorem. Donec dignissim nec felis at cursus. Cras eget sem vitae odio varius viverra. Vivamus scelerisque quis augue id consequat. Mauris egestas gravida eros vitae faucibus. Vivamus magna leo, tincidunt vel hendrerit sit amet, molestie ac nisl.",
-    publicado: true,
-    destacada: false,
-  },
-  {
-    nombre: "Winnie Poh",
-    imagen: "/images/winnie_pooh.jpg",
-    categoria: "Aventura",
-    codigo: 3,
-    descripcion:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce sit amet enim dui. Duis nec eros rhoncus, luctus mauris non, lobortis velit. Proin sed ligula euismod, tempor tellus at, dictum lorem. Donec dignissim nec felis at cursus. Cras eget sem vitae odio varius viverra. Vivamus scelerisque quis augue id consequat. Mauris egestas gravida eros vitae faucibus. Vivamus magna leo, tincidunt vel hendrerit sit amet, molestie ac nisl.",
-    publicado: true,
-    destacada: false,
-  },
+
   {
     nombre: "Logan",
     imagen: "/images/logan-accion.jpg",
