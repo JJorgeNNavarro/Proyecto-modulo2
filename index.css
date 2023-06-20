@@ -9,6 +9,9 @@
     background-color: #040428;
     font-weight: 450;
     font-size: 1.1rem;
+    position: fixed;
+    z-index: 4000;
+    width: 100%;
 }
 
 .letrasnav{
@@ -62,6 +65,7 @@ h3{
     height: auto;
     object-fit: cover;
     object-position: 100% 0;
+    z-index: -5;
   }
   
   /* ------- estilos texto arriba imagen----*/
@@ -88,10 +92,12 @@ h3{
     border-radius: 4px;
     margin-top: 10px;
     cursor: pointer;
-    width: 10%;
+
+    width: 15%;
     display: flex;
     justify-content: center;
     align-items: center;
+
   }
   
   .containerPrincipal h2,
@@ -99,12 +105,21 @@ h3{
     margin: 10px 0;
     width: 50%;
   }
+  .botonPlayConLink {
+    display: inline-block;
+    z-index: 500;
+  }
 
   /*---------------------CARTELERA---------------------*/
     .tarjeta-imagen {
         max-width: 100%;
         height: auto;
       }
+      .separador{
+        background-color: #040428;
+        font-weight: 450;
+        font-size: 1.1rem; 
+    }
   
   /*-----MEDIAQUERY TABLET-----------------*/
   @media (max-width: 820px) {
@@ -223,7 +238,7 @@ footer{
     }
 
     .class-logo img {
-        width: 23%;
+        width: 30%;
         object-fit: cover;
     }
 
@@ -241,3 +256,5 @@ footer{
         margin-top: 0px;
     }
 }
+
+   

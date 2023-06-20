@@ -3,7 +3,7 @@ window.addEventListener("DOMContentLoaded", function () {
   const overlay = document.getElementById("videoOverlay");
 
   function ponerAlturaOverlay() {
-    overlay.style.height = video.offsetHeight + "px";
+    overlay.style.height = video.offsetHeight + 30 + "px";
   }
 
   ponerAlturaOverlay();
@@ -11,19 +11,16 @@ window.addEventListener("DOMContentLoaded", function () {
   window.addEventListener("resize", ponerAlturaOverlay);
 });
 
-let pelis = JSON.parse(localStorage.getItem("peliculas"));
-
-if (pelis === null || pelis !== JSON.stringify(peliculas)) {
-  localStorage.setItem("peliculas", JSON.stringify(peliculas));
-}
+let pelis = obtenerPeliculas();
 /*---------------Agregar peliculas y categorias---------------------------------------*/
 function crearTarjeta(arrayPeliculas) {
   let arrayPelis = ``;
 
   arrayPeliculas.forEach((peli) => {
+    //agregada col-lg-3 col-md-3 col-6 para compatibilidad movil
     let item = `
-    <div class="col-3 p-2 new-sand bg-white my-2 justify-content-center d-flex flex-column bg-transparent">
-      <img src="${peli.imagen}" class="img-fluid tarjetaImagen" alt="Imagen del ${peli.nombre}">
+    <div class="col-lg-3 col-md-3 col-6 p-2 new-sand bg-white my-2 justify-content-center d-flex flex-column bg-transparent">
+    <a href="/pages/detalles/index.html?id=${peli.codigo}"><img src="${peli.imagen}" class="img-fluid tarjetaImagen" alt="Imagen del ${peli.nombre}"></a> 
     </div>
     `; //creando la tarjeta de la pelicula
     arrayPelis += item; //al string vacio le sumo las tarjetas
@@ -47,10 +44,14 @@ function render(arrayPeliculas) {
 }
 function crearCategoriaDiv(categoria, peliculas) {
   //viene de la linea 44 como parametro
-  return `<div id="${categoria}" class="row justify-content-center ps-1 pe-1 m-0">
-  <div class="tituloCartelera justify-content-center m-0 p-0 container-fluid d-flex flex-wrap">
+  return `<div id="${categoria}" class="row justify-content-center ps-1 pe-1 m-0 ">
+  <div class="tituloCartelera justify-content-center m-0 p-0 container-fluid d-flex flex-wrap separador">
     <h3 class="text-center">${categoria}</h3>
 
     </div> ${peliculas} </div>`;
 }
 render(pelis);
+
+/*----------FUNCIONES DEL LOGIN-------------*/
+crearHeader("inicio");
+crearFooter();

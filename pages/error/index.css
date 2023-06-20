@@ -1,0 +1,56 @@
+/*---------------------------main-------------------------------*/
+.containerPrincipal{
+    flex-direction: column;
+    text-align: center;
+    min-height: 90vh;
+    height: auto;
+    width: 100%;
+    background-image: url(/images/error.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+h1, h2{
+    color: #F27405;
+}
+.regresar-container {
+    margin-top: 10px;
+    text-align: center;
+  }
+  
+  body{
+    background-color: #29425e;
+}
+
+
+.imagenfondo{
+    background-image: url("/images/error2.png");
+}
+
+@media (max-width: 600px){
+    .imagenFondo{
+        width: 50%;
+        height: auto;
+        background-image: url("/images/error.png");
+        background-repeat: no-repeat;
+    }
+}
+
+/*-------------------boton------------------*/
+  .containerPrincipal .regresar-container button {
+    background-color: #F27405;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  
+/* QUITAR EL HEIGHT:VH PARA QUE FUNCIONE EL FOOTER LUEGO DE PONER COSAS DENTRO DEL MAIN
