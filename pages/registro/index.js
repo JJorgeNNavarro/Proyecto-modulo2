@@ -72,3 +72,6 @@ document
     // -------------------Restablecer el formulario-----------------
     document.getElementById("registroForm").reset(); // Reiniciar el formulario
   });
+
+crearHeader("registro");
+crearFooter();

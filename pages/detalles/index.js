@@ -18,4 +18,6 @@ function obtenerPelicula() {
   }
   /*traer del localstorage para agregarlo en una variable y a eso aplicarle el filter y toda la wea*/
 }
+crearHeader("");
+crearFooter();
 obtenerPelicula();

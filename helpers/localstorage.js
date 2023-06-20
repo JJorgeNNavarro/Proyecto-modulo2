@@ -5,3 +5,7 @@ function obtenerPeliculas() {
   }
   return pelis;
 }
+
+function obtenerPeliculaDestacada() {
+  return obtenerPeliculas().find((p) => p.destacada);
+}

@@ -53,3 +53,5 @@ function crearCategoriaDiv(categoria, peliculas) {
 render(pelis);
 
 /*----------FUNCIONES DEL LOGIN-------------*/
+crearHeader("inicio");
+crearFooter();
