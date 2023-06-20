@@ -43,7 +43,7 @@ function crearDestacada() {
 
   let destacadaHtml = `
   <div class="card bg-dark text-white">
-    <video id="video" src="/videos/ldlj-trailer.mp4" autoplay loop muted></video>
+    <video id="video" src=${destacada.video} autoplay loop muted></video>
     <div class="card-img-overlay overlay d-flex flex-column justify-content-center">
       <h2 class="card-title">${destacada.nombre}</h2>
       <p class="card-text">${destacada.descripcion}</p>
