@@ -2,7 +2,8 @@
 Proyecto modulo 2 de Rolling Code ,en el cual se pide crear una pagina de servicio de streaming de peliculas o series.
 
 ## Pre-Requisitos
-Para utilizar el proyecto es necesaria una conexion a internet para ingresar a la pagina y poder visualizar la misma
+* Para utilizar el proyecto es necesaria una conexion a internet
+* para ingresar a la pagina y poder visualizar la misma haz click [aquí](https://proyecto2-rollingstream.netlify.app/)
 
 ## Instalacion
 1. Abrir una carpeta donde quiera duplicar el proyecto
