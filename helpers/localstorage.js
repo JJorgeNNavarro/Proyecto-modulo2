@@ -9,3 +9,15 @@ function obtenerPeliculas() {
 function obtenerPeliculaDestacada() {
   return obtenerPeliculas().find((p) => p.destacada);
 }
+
+function obtenerUsuarios(nombre, contrasena) {
+  let listaUsuarios = JSON.parse(localStorage.getItem("usuarios"));
+
+  return listaUsuarios.find(
+    (usuario) => usuario.nombre == nombre && usuario.contrasena == contrasena
+  );
+}
+
+function usuarioLogueado(user) {
+  localStorage.setItem(JSON.stringify("usuarioLogueado", user));
+}
