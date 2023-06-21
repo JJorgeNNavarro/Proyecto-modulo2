@@ -47,6 +47,7 @@ body{
     padding: 20px;
     max-width: 400px;
     margin: 0 auto; /* Centrado horizontal */
+    padding-top: 70px;
   }
   
   .registrar-container h2 {
